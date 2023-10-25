@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Stacking</title>
+    <style>
+        body
+        {
+        background-color:cornsilk;
+        }
+        h1
+        {
+        text-align:center;
+        color:#f4969e;
+        }
+        .dog{
+        position:absolute;
+        left:10%;
+        top:10%;
+        z-index:0;
+        width:300pt;
+        height:200pt;
+        }
+        .cat{
+        position:absolute;
+        left:30%;
+        top:30%;
+        z-index:1;
+        width:300pt;
+        height:200pt;
+        }
+        .horse{
+        position:absolute;
+        left:50%;
+        top:50%;
+        z-index:2;
+        width:300pt;
+        height:190pt;
+        }
+        .footer
+        {
+        position:fixed;
+        left:0px;
+        right:0px;
+        bottom:0px;
+        text-align:center;
+        padding-top:2px;
+        background-color:#ee6c4d;
+        color:white;
+        }
+        </style>
+<script>
+    var topIndex=10;
+    function moveToTop(picture){
+    picture.style.zIndex=++topIndex;
+    }
+    </script>
+</head>
+<body>
+    <h1><b>Image Overlap Demo</b></h1>
+<div id="container">
+<img class="dog" src="https://i.ytimg.com/vi/Fyi-QKgWjm0/maxresdefault.jpg"onmouseover="moveToTop(this)">
+<img class="cat" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fc6dcaf5-9500-46cf-8d1e-2b9261867038/dd5qu0k-5b1227cb-36b2-441a-a4cd-a8486c0b3c85.jpg/v1/fill/w_600,h_446,q_75,strp/00_funny_cat_face_funny_kitten_fails_by_zencookies_dd5qu0k-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDQ2IiwicGF0aCI6IlwvZlwvZmM2ZGNhZjUtOTUwMC00NmNmLThkMWUtMmI5MjYxODY3MDM4XC9kZDVxdTBrLTViMTIyN2NiLTM2YjItNDQxYS1hNGNkLWE4NDg2YzBiM2M4NS5qcGciLCJ3aWR0aCI6Ijw9NjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.jQSrgTyFTX9Hs4YxWt_EJ6MMw9BtwmMCenSNJoUWSnI"onmouseover="moveToTop(this)">
+<img class="horse" src="https://media.istockphoto.com/id/511860800/photo/funny-animals.jpg?s=612x612&w=0&k=20&c=0Ss5RUFFCnWmV2eqtEImH-JTThqKPKpHNs0QKP9RMnE="onmouseover="moveToTop(this)">
+</div>
+<div class="footer">
+<p>Created by &#169 4CB21CS002</p>
+</div>
+</body>
+</html>
